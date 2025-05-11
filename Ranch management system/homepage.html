@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主頁</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .sidebar {
+            width: 180px;
+            background-color: #ffffff;
+            border-right: 1px solid #ddd;
+            padding: 30px;
+            box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar img {
+            width: 150px;
+            margin: 0 auto 20px;
+            display: block;
+            border-radius: 50%;
+        }
+        .sidebar .user-info {
+            margin-bottom: 300px;
+        }
+        .sidebar .user-info div {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .sidebar button {
+            width: 100%;
+            padding: 10px;
+            background-color: #66cdaa;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .sidebar button:hover {
+            background-color: #66cdaa;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .categories {
+            display: flex;
+            justify-content: flex-start; /* 或 space-around */
+            gap: 30px; /* 確保兩者之間的間距適當 */
+        }
+
+        .category {
+            width: 48%; /* 調整寬度讓內容保持美觀 */
+        }
+        .category {
+            width: 35%;
+        }
+        .category h2 {
+            font-size: 25px;
+            color: #333;
+            border-bottom: 2px solid #66cdaa;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .category ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .category ul li {
+            font-size: 20px;
+            color: #66cdaa;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .category ul li:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="logo.png" alt="Logo">
+        <div class="user-info">
+            <div>使用者名稱: XXXXXXX</div>
+            <div>使用者身份: XXXXXXX</div>
+            <div>使用者代碼: XXXXXXX</div>
+        </div>
+        <button>登出</button>
+    </div>
+    <div class="main-content">
+        <div class="categories">
+            <div class="category">
+                <h2>動物管理</h2>
+                <ul>
+                    <li>新增訂單</li>
+                    <li>變更數量</li>
+                    <li>新增數量</li>
+                    <li>刪減數量</li>
+                    <li>總數報表</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h2>健康管理</h2>
+                <ul>
+                    <li>就醫紀錄</li>
+                    <li>生產成長報表</li>
+                    <li>新生登記</li>
+                    <li>更新孕期狀態</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

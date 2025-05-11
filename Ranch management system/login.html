@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帳戶登入</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .login-container {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .login-container img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        .login-container h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .login-container label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-size: 14px;
+            color: #666;
+        }
+        .login-container input,
+        .login-container select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .login-container select {
+            appearance: none;
+            background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23999999" d="M2 0L0 2h4z"/></svg>') no-repeat right 10px center;
+            background-color: white;
+            background-size: 10px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #66cdaa;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #66cdaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="logo.png" alt="Logo">
+        <h1>帳戶登入</h1>
+        <form>
+            <label for="identity">使用者身份</label>
+            <select id="identity" name="identity">
+                <option value="admin">管理者</option>
+                <option value="vet">獸醫</option>
+                <option value="manager">管理員</option>
+            </select>
+            <label for="username">使用者名稱</label>
+            <input type="text" id="username" name="username" placeholder="輸入使用者名稱">
+            <label for="usercode">使用者代碼</label>
+            <input type="text" id="usercode" name="usercode" placeholder="輸入使用者代碼">
+            <label for="password">使用者密碼</label>
+            <input type="password" id="password" name="password" placeholder="輸入使用者密碼">
+            <button type="submit">登入</button>
+        </form>
+    </div>
+</body>
+</html>
